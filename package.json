@@ -1,0 +1,25 @@
+{
+  "name": "ng2-os",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.44",
+    "reflect-metadata": "^0.1.2",
+    "systemjs": "^0.19.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Mendes Dantas <ericdantas0@gmail.com> (https://github.com/ericmdantas)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericmdantas/ng2-os.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericmdantas/ng2-os/issues"
+  },
+  "homepage": "https://github.com/ericmdantas/ng2-os#readme",
+  "description": ""
+}

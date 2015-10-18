@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "filesGlob": [
+        "index.ts",
+        "client/**/*.ts"
+    ],
+    "files": [
+        "index.ts",
+        "client/os_cmp.ts"
+    ]
+}
