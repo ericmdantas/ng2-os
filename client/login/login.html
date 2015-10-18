@@ -1,0 +1,12 @@
+<div id="login-form">
+    <form [ng-form-model]="loginForm"
+            (submit)="login(loginForm.value.user);">
+      <input type="text"
+             ng-control="user"
+             (keyup.escape)="escHandler();"
+             maxlength="30"
+             autofocus />
+
+      <button type="submit" [disabled]="!loginForm.valid">go</button>
+    </form>
+</div>

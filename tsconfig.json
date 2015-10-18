@@ -10,7 +10,8 @@
         "client/**/*.ts"
     ],
     "files": [
-        "index.ts",
-        "client/os_cmp.ts"
+        "client/login/login_cmp.ts",
+        "client/os_cmp.ts",
+        "client/user/user.ts"
     ]
 }

@@ -1,0 +1,61 @@
+#login-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  height: 100%;
+  width: 100%;
+  background: url('client/backgrounds/login_background.png');
+  background-size: cover;
+}
+
+form {
+  position: relative;
+  margin: 0 auto;
+  padding: 25px;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+form input {
+  border: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid steelblue;
+  padding: 5px;
+  outline: 0;
+  font-size: 17px;
+}
+
+form button {
+  display: block;
+  margin: 30px auto 0 auto;
+  border-radius: 100%;
+  padding: 20px 22px;
+  border: none;
+  background-color: #eee;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+form button:disabled {
+  background-color: #fff;
+  border: 2px solid steelblue;
+  color: #555;
+  cursor: not-allowed;
+}
+
+form button {
+  background-color: steelblue;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+@media(min-width: 50em) {
+  form {
+    width: 500px;
+    margin-top: 250px;
+  }
+}
