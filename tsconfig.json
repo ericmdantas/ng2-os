@@ -10,8 +10,16 @@
         "client/**/*.ts"
     ],
     "files": [
+        "client/browser/browser_cmp.ts",
+        "client/desktop/desktop_cmp.ts",
+        "client/file/file.ts",
+        "client/folder/folder_cmp.ts",
+        "client/icon/icon_cmp.ts",
         "client/login/login_cmp.ts",
         "client/os_cmp.ts",
-        "client/user/user.ts"
+        "client/terminal/terminal_cmp.ts",
+        "client/user/user.ts",
+        "client/view_file/view_file.ts",
+        "client/wizard_shortcut/wizard_shortcut.ts"
     ]
 }
