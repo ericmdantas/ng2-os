@@ -27,7 +27,7 @@ import {DesktopCmp} from 'client/desktop/desktop_cmp.js';
   new Route({path: '/desktop', component: DesktopCmp, as: 'DesktopCmp'})
 ])
 export class OsCmp implements OnInit {
-  constructor() {
+  constructor(@Inject(Router) private _router: Router) {
 
   }
 

@@ -27,7 +27,8 @@ export class LoginCmp implements OnInit {
     loginForm: ControlGroup;
 
     constructor(@Inject(FormBuilder) public fb: FormBuilder,
-                @Inject(User) public user: User) {
+                @Inject(User) public user: User,
+                @Inject(Router) private _router: Router) {
 
       this.loginForm = fb.group({
         "user": [this.user.name, Validators.required]
@@ -39,7 +40,7 @@ export class LoginCmp implements OnInit {
     }
 
     login(user: string) {
-      
+      this._router.navigateByUrl('/desktop');
     }
 
     escHandler() {

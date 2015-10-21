@@ -6,10 +6,11 @@
         "experimentalDecorators": true
     },
     "filesGlob": [
-        "index.ts",
+        "client.ts",
         "client/**/*.ts"
     ],
     "files": [
+        "client.ts",
         "client/browser/browser_cmp.ts",
         "client/desktop/desktop_cmp.ts",
         "client/file/file.ts",
