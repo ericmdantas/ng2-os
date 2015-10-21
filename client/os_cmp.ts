@@ -1,14 +1,37 @@
 /// <reference path="../typings/tsd.d.ts" />
 
-import {Component} from 'angular2/angular2';
+import {
+  Component,
+  Inject,
+  OnInit
+} from 'angular2/angular2';
+
+import {
+  RouteConfig,
+  Route,
+  Router,
+  ROUTER_DIRECTIVES
+} from 'angular2/router';
+
 import {LoginCmp} from 'client/login/login_cmp.js';
+import {DesktopCmp} from 'client/desktop/desktop_cmp.js';
 
 @Component({
   selector: 'os-cmp',
   templateUrl: 'client/os.html',
   styleUrls: ['client/os.css'],
-  directives: [LoginCmp]
+  directives: [ROUTER_DIRECTIVES, LoginCmp, DesktopCmp]
 })
-export class OsCmp {
-  name: string = 'os-cmp'
+@RouteConfig([
+  new Route({path: '/', component: LoginCmp, as: 'LoginCmp'}),
+  new Route({path: '/desktop', component: DesktopCmp, as: 'DesktopCmp'})
+])
+export class OsCmp implements OnInit {
+  constructor() {
+
+  }
+
+  onInit() {
+    console.log('os-cmp init');
+  }
 }

@@ -11,6 +11,7 @@ import {
   FORM_DIRECTIVES
 } from 'angular2/angular2';
 
+import {Router} from 'angular2/router';
 import {User} from 'client/user/user.js';
 
 @Component({
@@ -38,7 +39,7 @@ export class LoginCmp implements OnInit {
     }
 
     login(user: string) {
-      console.log(user);
+      
     }
 
     escHandler() {

@@ -20,6 +20,6 @@
         "client/terminal/terminal_cmp.ts",
         "client/user/user.ts",
         "client/view_file/view_file.ts",
-        "client/wizard_shortcut/wizard_shortcut.ts"
+        "client/wizard_shortcut/wizard_shortcut_cmp.ts"
     ]
 }
