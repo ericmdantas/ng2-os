@@ -1,0 +1,26 @@
+#wizard-shortcut {
+  position: fixed;
+  top: 250px;
+  width: 90%;
+  left: 50%;
+  margin-left: -45%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+  font-size: 25px;
+  border: none;
+  width: 100%;
+}
+
+@media(min-width: 50em) {
+  #wizard-shortcut {
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+  }
+}

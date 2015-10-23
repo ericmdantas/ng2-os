@@ -1,0 +1,29 @@
+#desktop-menu {
+  position: fixed;
+  bottom: 10px;
+  width: 75%;
+  left: 50%;
+  margin-left: -37.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  border-radius: 5px;
+  padding: 15px;
+  width: 50px;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  transition: all .5s;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-grow: center;
+}
+
+.icon:hover {
+  border-radius: 100%;
+}

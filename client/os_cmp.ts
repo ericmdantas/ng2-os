@@ -15,12 +15,15 @@ import {
 
 import {LoginCmp} from 'client/login/login_cmp.js';
 import {DesktopCmp} from 'client/desktop/desktop_cmp.js';
+import {WizardShortcutToggler} from 'client/wizard_shortcut/wizard_shortcut_cmp.js';
+import {TerminalToggler} from 'client/terminal/terminal_cmp.js';
 
 @Component({
   selector: 'os-cmp',
   templateUrl: 'client/os.html',
   styleUrls: ['client/os.css'],
-  directives: [ROUTER_DIRECTIVES, LoginCmp, DesktopCmp]
+  directives: [ROUTER_DIRECTIVES, LoginCmp, DesktopCmp],
+  providers: [WizardShortcutToggler, TerminalToggler]
 })
 @RouteConfig([
   new Route({path: '/', component: LoginCmp, as: 'LoginCmp'}),

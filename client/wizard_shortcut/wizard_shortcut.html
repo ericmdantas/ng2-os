@@ -1,0 +1,6 @@
+<div id="wizard-shortcut" *ng-if="wizardShortcutToggler.visible">
+  <input type="text"
+         placeholder="call the wizard"
+         #wsi
+         (keyup.escape)="hideHandler()" />
+</div>

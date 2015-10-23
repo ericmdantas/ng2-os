@@ -13,6 +13,7 @@
         "client.ts",
         "client/browser/browser_cmp.ts",
         "client/desktop/desktop_cmp.ts",
+        "client/desktop_menu/desktop_menu_cmp.ts",
         "client/file/file.ts",
         "client/folder/folder_cmp.ts",
         "client/icon/icon_cmp.ts",
