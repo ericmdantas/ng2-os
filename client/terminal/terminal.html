@@ -1,3 +1,19 @@
-<div id="terminal">
+<div id="terminal" *ng-if="terminalToggler.visible">
+  <div class="terminal-header">
+    <span>~ terminal</span>
+  </div>
 
+  <div class="terminal-body">
+    <div class="terminal-commands">
+      <p>
+        <span>~ hello</span>
+      </p>
+    </div>
+
+    <div class="terminal-input">
+        <span>~</span>
+        <input type="text"
+               (keyup.escape)="hideTerminalHandler();"/>                   
+    </div>
+  </div>
 </div>

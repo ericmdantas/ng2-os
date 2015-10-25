@@ -1,3 +1,38 @@
 #terminal {
-  
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #000;
+  border: 1px inset #ddd;
+  height: 555px;
+  width: 555px;
+}
+
+.terminal-header {
+  border-bottom: 1px inset #ddd;
+  background-color: beige;
+  padding: 5px;
+}
+
+.terminal-body {
+  padding: 0 5px;
+}
+
+.terminal-commands {
+  color: beige;
+}
+
+.terminal-input {
+  color: #fff;
+}
+
+.terminal-input input {
+  background-color: #000;
+  border: none;
+  width: 90%;
+  padding: 5px;
+}
+
+.terminal-input input:focus {
+  outline: 0;
 }
