@@ -16,6 +16,7 @@
         "client/desktop_menu/desktop_menu_cmp.ts",
         "client/file/file.ts",
         "client/folder/folder_cmp.ts",
+        "client/folder/folder_list_cmp.ts",
         "client/icon/icon_cmp.ts",
         "client/login/login_cmp.ts",
         "client/os_cmp.ts",

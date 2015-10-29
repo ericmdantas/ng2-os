@@ -1,3 +1,10 @@
-<div id="folder">
+<div class="folder-container">
+  <div class="folders">
+    <span class="fa fa-fw folder" [class.fa-folder]="closed"
+                                  [class.fa-folder-open]="!closed"
+                                  (mousedown)="openFolder()"
+                                  (mouseup)="closeFolder()"></span>
 
+    <span class="folder-name">{{folderName}}</span>
+  </div>
 </div>

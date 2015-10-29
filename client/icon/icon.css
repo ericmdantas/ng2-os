@@ -1,0 +1,20 @@
+#icon-container {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 240px;
+}
+
+.icon {
+  font-size: 65px;
+  color: skyblue;
+  display: block;
+  cursor: pointer;
+}
+
+.icon-name {
+  display: block;
+  color: #eee;
+  margin-left: 15px;
+  margin-top: 5px;
+}
