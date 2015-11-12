@@ -11,17 +11,19 @@ import {WizardShortcutCmp, WizardShortcutToggler} from 'client/wizard_shortcut/w
 import {TerminalCmp, TerminalToggler} from 'client/terminal/terminal_cmp.js';
 import {FolderListCmp} from 'client/folder/folder_list_cmp.js';
 import {IconCmp} from 'client/icon/icon_cmp.js';
+import {BrowserCmp, BrowserToggler} from 'client/browser/browser_cmp.js';
 
 @Component({
   selector: 'desktop-cmp',
   templateUrl: 'client/desktop/desktop.html',
   styleUrls: ['client/desktop/desktop.css'],
   directives: [DesktopMenuCmp, WizardShortcutCmp, TerminalCmp,
-               FolderListCmp, IconCmp]
+               FolderListCmp, IconCmp, BrowserCmp]
 })
 export class DesktopCmp implements OnInit {
   constructor(@Inject(WizardShortcutToggler) private _wizardShortcutToggler: WizardShortcutToggler,
-              @Inject(TerminalToggler) private _terminalToggler: TerminalToggler) {
+              @Inject(TerminalToggler) private _terminalToggler: TerminalToggler,
+              @Inject(BrowserToggler) private _browserToggler: BrowserToggler) {
 
   }
 
@@ -35,5 +37,9 @@ export class DesktopCmp implements OnInit {
 
   showTerminalHandler() {
     this._terminalToggler.show();
+  }
+
+  showBrowserHandler() {
+    this._browserToggler.show();
   }
 }

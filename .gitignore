@@ -1,2 +1,4 @@
 node_modules
-**/*.js
+client.js
+index.js
+client/**/*.js

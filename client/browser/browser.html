@@ -1,3 +1,17 @@
-<div id="browser">
-  
+<div id="browser" [hidden]="!browserToggler.visible">
+  <div class="browser-url">
+
+  </div>
+
+  <div class="browser-body">
+    <div class="logo-container">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_Chrome_Material_Icon-450x450.png" />
+    </div>
+
+    <div class="favourites-container">
+      <div *ng-for="#f of browserFavouritesStore.sites;" class="browser-favourite" fav [el]="f">
+        <p>{{f.name}}</p>
+      </div>
+    </div>
+  </div>
 </div>

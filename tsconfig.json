@@ -7,13 +7,16 @@
     },
     "filesGlob": [
         "client.ts",
+        "server.ts",
         "client/**/*.ts"
     ],
     "files": [
         "client.ts",
         "client/browser/browser_cmp.ts",
-        "client/desktop/desktop_cmp.ts",
+        "client/browser/browser_fav_store.ts",
+        "client/browser/browser_favourite_directive.ts",
         "client/desktop_menu/desktop_menu_cmp.ts",
+        "client/desktop/desktop_cmp.ts",
         "client/file/file.ts",
         "client/folder/folder_cmp.ts",
         "client/folder/folder_list_cmp.ts",
