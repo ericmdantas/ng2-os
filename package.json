@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "angular2": "^2.0.0-alpha.45",
+    "angular2": "^2.0.0-alpha.46",
     "express": "^4.13.3",
     "font-awesome": "^4.4.0",
     "reflect-metadata": "^0.1.2",
