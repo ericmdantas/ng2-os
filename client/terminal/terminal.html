@@ -1,4 +1,4 @@
-<div id="terminal" *ng-if="terminalToggler.visible">
+<div id="terminal" *ngIf="terminalToggler.visible">
   <div class="terminal-header">
     <span>~ terminal</span>
   </div>
@@ -13,7 +13,7 @@
     <div class="terminal-input">
         <span>~</span>
         <input type="text"
-               (keyup.escape)="hideTerminalHandler();"/>                   
+               (keyup.escape)="hideTerminalHandler();"/>
     </div>
   </div>
 </div>

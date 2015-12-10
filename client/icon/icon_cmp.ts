@@ -1,9 +1,7 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import {
   Component,
   OnInit
-} from 'angular2/angular2';
+} from 'angular2/core';
 
 @Component({
   selector: 'icon-cmp',
@@ -13,7 +11,7 @@ import {
 export class IconCmp implements OnInit {
   name: string = 'pluto.png';
 
-  onInit() {
+  ngOnInit() {
     console.log('icon-cmp init');
   }
 }

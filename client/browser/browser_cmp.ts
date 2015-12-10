@@ -1,11 +1,8 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import {
   Component,
   Inject,
-  NgFor,
   OnInit
-} from 'angular2/angular2';
+} from 'angular2/core';
 
 import {BrowserFavouritesStore} from 'client/browser/browser_fav_store.js';
 import {FavDirective} from 'client/browser/browser_favourite_directive.js';
@@ -27,7 +24,7 @@ export class BrowserToggler {
   templateUrl: 'client/browser/browser.html',
   styleUrls: ['client/browser/browser.css'],
   providers: [BrowserFavouritesStore],
-  directives: [NgFor, FavDirective]
+  directives: [FavDirective]
 })
 export class BrowserCmp implements OnInit {
   constructor(@Inject(BrowserToggler) public browserToggler: BrowserToggler,
@@ -35,7 +32,7 @@ export class BrowserCmp implements OnInit {
 
   }
 
-  onInit() {
+  ngOnInit() {
     console.log('browser-cmp init');
   }
 }

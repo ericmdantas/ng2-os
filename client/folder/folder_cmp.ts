@@ -1,9 +1,7 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import {
   Component,
   OnInit
-} from 'angular2/angular2';
+} from 'angular2/core';
 
 @Component({
   selector: 'folder-cmp',
@@ -14,7 +12,7 @@ import {
 export class FolderCmp implements OnInit {
   closed: boolean = true;
 
-  onInit() {
+  ngOnInit() {
     console.log('folder init');
   }
 

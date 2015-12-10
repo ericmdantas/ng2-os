@@ -1,31 +1,14 @@
 {
     "compilerOptions": {
+        "module": "system",
+        "moduleResolution": "node",
         "target": "es5",
-        "module": "commonjs",
+        "sourceMap": true,
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "noImplicitAny": false
     },
-    "filesGlob": [
-        "client.ts",
-        "server.ts",
-        "client/**/*.ts"
-    ],
-    "files": [
-        "client.ts",
-        "client/browser/browser_cmp.ts",
-        "client/browser/browser_fav_store.ts",
-        "client/browser/browser_favourite_directive.ts",
-        "client/desktop_menu/desktop_menu_cmp.ts",
-        "client/desktop/desktop_cmp.ts",
-        "client/file/file.ts",
-        "client/folder/folder_cmp.ts",
-        "client/folder/folder_list_cmp.ts",
-        "client/icon/icon_cmp.ts",
-        "client/login/login_cmp.ts",
-        "client/os_cmp.ts",
-        "client/terminal/terminal_cmp.ts",
-        "client/user/user.ts",
-        "client/view_file/view_file.ts",
-        "client/wizard_shortcut/wizard_shortcut_cmp.ts"
+    "exclude": [
+      "node_modules"
     ]
 }

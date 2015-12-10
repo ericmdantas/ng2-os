@@ -1,12 +1,8 @@
-/// <reference path="typings/tsd.d.ts" />
-
 import {
-  ROUTER_PROVIDERS,
-  LocationStrategy,
-  HashLocationStrategy
+  ROUTER_PROVIDERS
 } from 'angular2/router';
 
-import {bootstrap, provide} from 'angular2/angular2';
+import {bootstrap} from 'angular2/platform/browser';
 import {OsCmp} from 'client/os_cmp.js';
 
 bootstrap(OsCmp, [ROUTER_PROVIDERS]);

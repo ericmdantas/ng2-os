@@ -1,10 +1,8 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import {
   Component,
   Inject,
   OnInit
-} from 'angular2/angular2';
+} from 'angular2/core';
 
 import {DesktopMenuCmp} from 'client/desktop_menu/desktop_menu_cmp.js';
 import {WizardShortcutCmp, WizardShortcutToggler} from 'client/wizard_shortcut/wizard_shortcut_cmp.js';
@@ -27,7 +25,7 @@ export class DesktopCmp implements OnInit {
 
   }
 
-  onInit() {
+  ngOnInit() {
     console.log('desktop init');
   }
 

@@ -1,10 +1,8 @@
-/// <reference path="../typings/tsd.d.ts" />
-
 import {
   Component,
   Inject,
   OnInit
-} from 'angular2/angular2';
+} from 'angular2/core';
 
 import {
   RouteConfig,
@@ -27,15 +25,15 @@ import {BrowserToggler} from 'client/browser/browser_cmp.js';
   providers: [WizardShortcutToggler, TerminalToggler, BrowserToggler]
 })
 @RouteConfig([
-  new Route({path: '/', component: LoginCmp, as: 'LoginCmp'}),
-  new Route({path: '/desktop', component: DesktopCmp, as: 'DesktopCmp'})
+  new Route({path: '/', component: LoginCmp, name: 'LoginCmp'}),
+  new Route({path: '/desktop', component: DesktopCmp, name: 'DesktopCmp'})
 ])
 export class OsCmp implements OnInit {
   constructor(@Inject(Router) private _router: Router) {
 
   }
 
-  onInit() {
+  ngOnInit() {
     console.log('os-cmp init');
   }
 }

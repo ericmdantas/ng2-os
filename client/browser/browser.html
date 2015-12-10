@@ -9,7 +9,7 @@
     </div>
 
     <div class="favourites-container">
-      <div *ng-for="#f of browserFavouritesStore.sites;" class="browser-favourite" fav [el]="f">
+      <div *ngFor="#f of browserFavouritesStore.sites;" class="browser-favourite" fav [el]="f">
         <p>{{f.name}}</p>
       </div>
     </div>

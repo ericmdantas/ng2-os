@@ -1,11 +1,8 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import {
   Component,
-  NgIf,
   Inject,
   OnInit
-} from 'angular2/angular2';
+} from 'angular2/core';
 
 export class WizardShortcutToggler {
   visible: boolean = false;
@@ -22,15 +19,14 @@ export class WizardShortcutToggler {
 @Component({
   selector: 'wizard-shortcut-cmp',
   templateUrl: 'client/wizard_shortcut/wizard_shortcut.html',
-  styleUrls: ['client/wizard_shortcut/wizard_shortcut.css'],
-  directives: [NgIf]
+  styleUrls: ['client/wizard_shortcut/wizard_shortcut.css']
 })
 export class WizardShortcutCmp implements OnInit {
   constructor(@Inject(WizardShortcutToggler) public wizardShortcutToggler: WizardShortcutToggler) {
 
   }
 
-  onInit() {
+  ngOnInit() {
     console.log('wizard-shortcut-cmp init');
   }
 

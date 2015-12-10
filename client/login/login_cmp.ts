@@ -1,15 +1,16 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
 import {
   Component,
   EventEmitter,
   Inject,
-  OnInit,
+  OnInit
+} from 'angular2/core';
+
+import {
   FormBuilder,
   Validators,
   ControlGroup,
-  FORM_DIRECTIVES
-} from 'angular2/angular2';
+  Control
+} from 'angular2/common';
 
 import {Router} from 'angular2/router';
 import {User} from 'client/user/user.js';
@@ -19,11 +20,10 @@ import {User} from 'client/user/user.js';
   providers: [User],
   templateUrl: 'client/login/login.html',
   styleUrls: ['client/login/login.css'],
-  outputs: ['loginOk'],
-  directives: [FORM_DIRECTIVES]
+  outputs: ['loginOk']
 })
 export class LoginCmp implements OnInit {
-    loginOk: EventEmitter = new EventEmitter();
+    loginOk: EventEmitter<any> = new EventEmitter();
     loginForm: ControlGroup;
 
     constructor(@Inject(FormBuilder) public fb: FormBuilder,
@@ -35,7 +35,7 @@ export class LoginCmp implements OnInit {
       });
     }
 
-    onInit() {
+    ngOnInit() {
       console.log('login-cmp ok');
     }
 
@@ -44,6 +44,6 @@ export class LoginCmp implements OnInit {
     }
 
     escHandler() {
-      this.loginForm.controls.user.updateValue("");
+      (<Control>this.loginForm.controls["user"]).updateValue("");
     }
 }

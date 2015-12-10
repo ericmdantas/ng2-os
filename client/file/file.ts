@@ -1,12 +1,13 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
-import {Component, OnInit} from 'angular2/angular2';
+import {
+  Component,
+  OnInit
+} from 'angular2/core';
 
 @Component({
   selector: 'file-cmp'
 })
 export class FileCmp implements OnInit {
-  onInit() {
+  ngOnInit() {
     console.log('file-cmp init');
   }
 }

@@ -1,5 +1,3 @@
-///<reference path="../../typings/tsd.d.ts" />
-
 import {
   Directive,
   Input,
@@ -17,7 +15,7 @@ import {BrowserFavStore} from 'client/browser/browser_fav_store.js';
 export class FavDirective implements OnInit {
   @Input('el') el: BrowserFavStore;
 
-  onInit() {
+  ngOnInit() {
     console.log('fav init');
   }
 

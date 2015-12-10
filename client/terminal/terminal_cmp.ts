@@ -1,6 +1,8 @@
-/// <reference path="../../typings/tsd.d.ts" />
-
-import {Component, Inject, NgIf, OnInit} from 'angular2/angular2';
+import {
+  Component,
+  Inject,
+  OnInit
+} from 'angular2/core';
 
 export class TerminalToggler {
   visible: boolean = false;
@@ -17,15 +19,14 @@ export class TerminalToggler {
 @Component({
   selector: 'terminal-cmp',
   templateUrl: 'client/terminal/terminal.html',
-  styleUrls: ['client/terminal/terminal.css'],
-  directives: [NgIf]
+  styleUrls: ['client/terminal/terminal.css']
 })
 export class TerminalCmp implements OnInit {
   constructor(@Inject(TerminalToggler) public terminalToggler: TerminalToggler) {
 
   }
 
-  onInit() {
+  ngOnInit() {
     console.log('terminal-cmp init');
   }
 
