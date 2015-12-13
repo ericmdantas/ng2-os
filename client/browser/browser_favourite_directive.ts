@@ -2,14 +2,14 @@ import {
   Directive,
   Input,
   OnInit
-} from 'angular2/angular2';
+} from 'angular2/core';
 
 import {BrowserFavStore} from 'client/browser/browser_fav_store.js';
 
 @Directive({
   selector: '[fav]',
   host: {
-    '(click)': 'clickHandler()',
+    '(click)': 'clickHandler()'
   }
 })
 export class FavDirective implements OnInit {

@@ -24,7 +24,10 @@ export class BrowserToggler {
   templateUrl: 'client/browser/browser.html',
   styleUrls: ['client/browser/browser.css'],
   providers: [BrowserFavouritesStore],
-  directives: [FavDirective]
+  directives: [FavDirective],
+  host: {
+    '(window:keyup)': 'closeHandler($event)'
+  }
 })
 export class BrowserCmp implements OnInit {
   constructor(@Inject(BrowserToggler) public browserToggler: BrowserToggler,
@@ -34,5 +37,11 @@ export class BrowserCmp implements OnInit {
 
   ngOnInit() {
     console.log('browser-cmp init');
+  }
+
+  closeHandler(ev: KeyboardEvent) {
+    if (ev.which === 27) {
+      this.browserToggler.hide();
+    }
   }
 }
